@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@font-face {
+    font-family: 'lexend';
+    src: url("./assets/fonts/Lexend/Lexend-VariableFont_wght.ttf");
+}
+
+@theme{
+    --font-lexend: 'lexend';
+    --shadow-primary: 1.95px 1.95px 2.6px rgba(0,0,0,0.25);
+}
+
+
+.navigation-style{
+    border-radius: 36px;
+    border: 0.2px solid #000;
+    background: #FFF;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+*{
+    scrollbar-width: none;
+
+}
